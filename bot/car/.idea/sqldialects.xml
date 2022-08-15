@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/bot/branch/branch_add.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/branch/branch_all_arr.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/branch/branch_del.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/code/code_edit.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/corporation.py" dialect="AZURE" />
+    <file url="file://$PROJECT_DIR$/bot/delete/car/car_brand.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/car/car_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/car/car_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/car/car_year.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/spare/car_del.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/spare/spare_arr.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/spare/spare_del.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/delete/spare/yes_no.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/language.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/menu/main_menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/people_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot/start.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/callback/callback.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/menu/main_menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/message/message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/oil/oil_add.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/product/add.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/product/new/code_new_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/product/new/new_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/product/product_minus.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/product/product_plus.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/settings/admin/main.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/settings/edit_name/edit_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/settings/language/language.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/settings/location/location.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/settings/spare_number/spare_arr.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/branch/start/start.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/basket/basket_main.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/basket/reduce.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/car_corporation.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/car_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/car_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/car_pazitsiya.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/car_year.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/car_arr/print_car_spare.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/menu/language.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/menu/phone_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/message/message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/my_settings.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/settings/number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/spare/print_spare_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/spare/spare_main.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/start/start.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/contact.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/location.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/logout.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/main.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/photo.py" dialect="GenericSQL" />
+  </component>
+</project>

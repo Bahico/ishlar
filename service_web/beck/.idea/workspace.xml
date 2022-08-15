@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ca8796b-f750-416c-a72b-ac6d83a7de52" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AHd7IilriTHejlntpyTJfhf3qH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ikrom/OneDrive/Desktop/pythonProject2/ishlar/web site/service_web/login",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="beck" type="Python.DjangoServer" factoryName="Django server">
+      <module name="beck" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="config.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ca8796b-f750-416c-a72b-ac6d83a7de52" name="Changes" comment="" />
+      <created>1654670275887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654670275887</updated>
+      <workItem from="1654670277123" duration="14626000" />
+      <workItem from="1654688561749" duration="1804000" />
+      <workItem from="1654694701813" duration="3053000" />
+      <workItem from="1654763053550" duration="3062000" />
+      <workItem from="1654841578395" duration="3179000" />
+      <workItem from="1654853379264" duration="16045000" />
+      <workItem from="1655020310135" duration="622000" />
+      <workItem from="1655027252713" duration="227000" />
+      <workItem from="1655047311071" duration="3633000" />
+      <workItem from="1655105743888" duration="375000" />
+      <workItem from="1655110376431" duration="1665000" />
+      <workItem from="1655114592012" duration="1496000" />
+      <workItem from="1655186708045" duration="15000" />
+      <workItem from="1655447026538" duration="2789000" />
+      <workItem from="1655458533180" duration="5246000" />
+      <workItem from="1655464034475" duration="7000" />
+      <workItem from="1655464048401" duration="526000" />
+      <workItem from="1655464587875" duration="2880000" />
+      <workItem from="1655467722972" duration="4083000" />
+      <workItem from="1655473591781" duration="2886000" />
+      <workItem from="1655481904237" duration="4452000" />
+      <workItem from="1655538924951" duration="626000" />
+      <workItem from="1655549081753" duration="1439000" />
+      <workItem from="1655747387534" duration="1542000" />
+      <workItem from="1655759927959" duration="7431000" />
+      <workItem from="1655799250282" duration="2208000" />
+      <workItem from="1655915094961" duration="2186000" />
+      <workItem from="1655997661970" duration="67000" />
+      <workItem from="1656074529437" duration="404000" />
+      <workItem from="1656075595498" duration="114000" />
+      <workItem from="1656163970105" duration="44000" />
+      <workItem from="1656164700155" duration="365000" />
+      <workItem from="1656215233863" duration="2101000" />
+      <workItem from="1656236482707" duration="29000" />
+      <workItem from="1656252780094" duration="706000" />
+      <workItem from="1656311215823" duration="29000" />
+      <workItem from="1657778572231" duration="1323000" />
+      <workItem from="1657975729470" duration="2090000" />
+      <workItem from="1658063290533" duration="2016000" />
+      <workItem from="1658124070540" duration="3219000" />
+      <workItem from="1658140941772" duration="1016000" />
+      <workItem from="1658157010528" duration="115000" />
+      <workItem from="1658235497327" duration="2754000" />
+      <workItem from="1658286324707" duration="1257000" />
+      <workItem from="1658308517568" duration="273000" />
+      <workItem from="1658309039522" duration="5038000" />
+      <workItem from="1658386421942" duration="948000" />
+      <workItem from="1658489597640" duration="89000" />
+      <workItem from="1658489795155" duration="5632000" />
+      <workItem from="1658665286249" duration="396000" />
+      <workItem from="1658728507750" duration="3288000" />
+      <workItem from="1658741785716" duration="6347000" />
+      <workItem from="1658828370227" duration="2199000" />
+      <workItem from="1658840991667" duration="57000" />
+      <workItem from="1658905162956" duration="2198000" />
+      <workItem from="1658920270660" duration="3613000" />
+      <workItem from="1658986810260" duration="4192000" />
+      <workItem from="1658992035389" duration="58000" />
+      <workItem from="1658997607288" duration="5194000" />
+      <workItem from="1659005084259" duration="4941000" />
+      <workItem from="1659078358338" duration="311000" />
+      <workItem from="1659090910196" duration="251000" />
+      <workItem from="1659693425300" duration="7000000" />
+      <workItem from="1659772421829" duration="1558000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/service_beck$manage.coverage" NAME="manage Coverage Results" MODIFIED="1655467890961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

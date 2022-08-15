@@ -1,0 +1,113 @@
+.service-item {
+    padding: 0 10px;
+    margin: 0 10px;
+    /*background: rgba(133, 184, 210, 0.8);*/
+    border-radius: 100px;
+    /*box-shadow: 0 0 20px rgba(217, 34, 77, 0.8);*/
+    color: #050505;
+    max-width: 600px;
+    min-width: 450px;
+}
+
+.service-container {
+    display: flex;
+}
+
+.service-table {
+    color: #050505;
+    text-align: left;
+    margin: 0 20px;
+    height: 250px;
+    display: flex;
+}
+
+.service-table thead th {
+    margin: 5px 0;
+    height: 0;
+    width: 100%;
+}
+
+.service-table tbody td {
+    margin: 5px 0;
+    height: 0;
+    width: 100%;
+}
+
+.service-setting {
+    padding: 10px 10px;
+    margin: 30px 5% 30px 30px;
+    color: #050505;
+    /*background: rgba(133, 184, 210, 0.8);*/
+    border-radius: 1px;
+    /*box-shadow: 0 0 20px rgba(217, 34, 77, 0.8);*/
+    max-width: 800px;
+    min-width: 600px;
+    min-height: 100px;
+}
+
+.service-work {
+    padding: 15px 10px;
+    margin: 30px 30px 30px 5%;
+    /*background: rgba(133, 184, 210, 0.8);*/
+    border-radius: 1px;
+    /*box-shadow: 0 0 20px rgba(217, 34, 77, 0.8);*/
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.service-comments {
+    padding: 15px 10px;
+    margin: 30px 30px 30px 5%;
+    background: rgba(133, 184, 210, 0.8);
+    border-radius: 1px;
+    box-shadow: 0 0 20px rgba(133, 184, 210, 0.8);
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.service-comment {
+    display: flex;
+    padding: 15px 10px;
+    margin: 30px 30px 30px 5%;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(133, 184, 210, 1);
+    min-width: 200px;
+    min-height: 100px;
+    max-height: 220px;
+}
+
+.service-com-in {
+    color: #fef8f8;
+    text-align: left;
+    left: 20%;
+    right: 20%;
+}
+
+.service-com-1 button {
+    border: none;
+    background: #61dafb;
+    border-radius: 10%;
+}
+
+.service-com-1 {
+    text-align: left;
+    float: left;
+}
+
+.service-com-2 {
+    display: flex;
+    height: 100%;
+}
+
+.service-com-2 h6 {
+    margin: 10px;
+}
+
+.service-com-2 i, .service-com-2 p {
+    margin: 0 10px;
+}
+
+.service-com-2 div {
+    display: block;
+}

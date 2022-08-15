@@ -1,0 +1,34 @@
+.content_nav {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.content_nav .nav_list {
+    display: flex;
+}
+
+.active {
+    display: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+.content_nav .nav_list li {
+    transform: translateY(0);
+    transition: .2s ease-in-out;
+}
+
+
+.content_nav .nav_list li a {
+    font-size: 25px;
+    color: #fef8f8;
+    margin: 0 20px;
+    padding: 10px;
+    background: rgba(242, 67, 83, 0.75);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.content_nav .nav_list li:hover {
+    transform: translateY(50%);
+}

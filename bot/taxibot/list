@@ -1,0 +1,25 @@
+                if i[2] == datetime.datetime.now().strftime("%x"):
+                    b = i[0]
+                    s = i[1]
+                    date_array.append(s)
+                    for c in location:
+                        if c[0] == b:
+                            # message.location.longitude = c[1]
+                            # message.location.latitude = c[2]
+                            # location_handler = MessageHandler(Filters.location, c)
+                            await bot.send_message(message.from_user.id,(c[1],c[2],s))
+                    if b in location:
+                        await bot.send_message(message.from_user.id, s)
+                elif i[2] != datetime.datetime.now().strftime("%x"):
+                    son = client[:i]
+                    date_table.append([datetime.datetime.now().strftime("%x")])
+                    for b in son:
+                        date_table[-1].append(b[1])
+                    for s in date_array:
+                        date_table[-1].append(s)
+                    date_array.clear()
+                    son = client[:i]
+                    del son
+
+            client.clear()
+            location.clear()

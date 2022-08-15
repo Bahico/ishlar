@@ -1,0 +1,51 @@
+# if callback_data['location'] == "start":
+    #
+    #     if callback_data["text"] == "language":
+    #         if callback_data["language"] == "rus":
+    #             await main_menu.get_menu(message, vote_cb, conn, "rus")
+    #         elif callback_data["language"] == "uzb":
+    #             await main_menu.get_menu(message, vote_cb, conn, "uzb")
+    #         elif callback_data["language"] == "eng":
+    #             await main_menu.get_menu(message, vote_cb, conn, "eng")
+
+#     if callback_data["text"] == "food_button":
+    #         await delivery.get_delivery(message, conn, vote_cb, callback_data["language"])
+    #     elif callback_data["text"] == "history_button":
+    #         pass
+    #     elif callback_data["text"] == "about_button":
+    #         pass
+    #     elif callback_data["text"] == "opinion_button":
+    #         pass
+    #     elif callback_data["text"] == "communication_button":
+    #         pass
+# if callback_data["text"] == "delivery":
+    #         pass
+    #     elif callback_data["text"] == "take":
+    #         pass
+    #     elif callback_data["text"] == "back":
+    #         await start.get_start(message, vote_cb)
+    #
+    # elif callback_data["location"] == "branch":
+    #     branch = conn.execute("select * from BRANCH where open = (?);", ("True",)).fetchall()
+    #     for i in branch:
+    #         if callback_data["text"] == i[5]:
+    #             await food_menu.get_food_menu(message, conn, vote_cb, callback_data["language"], callback_data["text"])
+    # elif callback_data["location"] == "food_menu":
+    #     if callback_data["text"] == "waffle":
+    #         await waffle.get_waffle(message, conn, vote_cb, callback_data["language"], callback_data["branch"])
+    #     elif callback_data["text"] == "coffee":
+    #         pass
+    #     elif callback_data["text"] == "drinks":
+    #         pass
+    #     elif callback_data["text"] == "fast_food":
+    #         await fast_food.get_fast_food(message, conn, vote_cb, callback_data["language"], callback_data["branch"])
+    # elif callback_data["location"] == "coffee":
+    #     pass
+    # elif callback_data["location"] == "fast_food":
+    #     pass
+    # elif callback_data["location"] == "drinks":
+    #     pass
+    # elif callback_data["location"] == "waffle":
+    #     pass
+
+

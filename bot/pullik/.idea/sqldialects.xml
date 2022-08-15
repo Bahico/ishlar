@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/admin/callback/callback.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/food_minus/food_arr.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/food_minus/food_delete.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/menu/main_menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/message/main_message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/product_del/product_del.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/product_del/product_delete.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/start/start.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/admin/update_photo/update_photo.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/add_branch/insert.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/adit_code/branch.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/callback/admin_all.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/del_branch/del_branch.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/delete/delete.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/number/admin_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/number/branch.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/bot_/number/user_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/basket/basket_uz.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/callback/callback.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/client_location/location.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/delivery/branch.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/delivery/delivery.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food/callback_food_uzb.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food/coffee.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food/drinks.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food/fast_food.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food/waffle.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food_menu/food_menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food_settings/callback_uzb.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/food_settings/food_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/history/history.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/main_menu/main_menu.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/message/eng.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/message/main_message.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/message/rus.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/message/uzb.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/phone_number/phone_number.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/send_admin/send_admin.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/client/user/user_name.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/main.py" dialect="GenericSQL" />
+  </component>
+</project>

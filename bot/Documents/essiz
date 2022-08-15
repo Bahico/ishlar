@@ -1,0 +1,408 @@
+    # spare = conn.execute(f"select {admin[7]} from CAR where id = (?);", (int(admin[8]),)).fetchall()
+    # my_branch = conn.execute(f"select {admin[7]} from BRANCH where id = {admin[1]};").fetchall()
+    # spare = spare[0]
+    # son = 0
+    # branch = spare[0].split("[")[1].split(".")
+    # for i in branch:
+    #     i = i.split(",")
+    #     if i[0] == admin[1]:
+    #         son = 1
+    #         break
+    # if son == 0:
+    #     conn.execute(
+    #         f"update CAR set {admin[7]} = '{spare[0][0] + '.' + str(admin[1]) + ',' + message.text}' where id = (?);",
+    #         (admin[8],))
+    #     if my_branch[0][0] is not None:
+    #         conn.execute(f"update BRANCH set {admin[7]} = '{branch[0][0] + '.' + message.text + ',' + admin[8]}' where id = {admin[1]};")
+    #     else:
+    #         conn.execute(f"update BRANCH set {admin[7]} = '{message.text + ',' + admin[8]}' where id = {admin[1]};")
+    #     if admin[3] == "uzb":
+    #         await bot.send_message(message.from_user.id, "Qo'shildi✅")
+    #     elif admin[3] == "rus":
+    #         await bot.send_message(message.from_user.id, "Added✅")
+    #     elif admin[3] == "eng":
+    #         await bot.send_message(message.from_user.id, "Добавлено✅")
+    # else:
+    #     if admin[3] == "uzb":
+    #         await bot.send_message(message.from_user.id, "Siz oldin ham buni qo'shgansiz.")
+    #     elif admin[3] == "rus":
+    #         await bot.send_message(message.from_user.id, "Вы добавили это раньше.")
+    #     elif admin[3] == "eng":
+    #         await bot.send_message(message.from_user.id, "You’ve added this before.")
+    # conn.execute("update ADMIN set settings = '0' where id = (?);", (message.from_user.id,))
+
+    # car = callback_query["name"].split(',')
+    # car_spare = None
+    # car_name = None
+    # car_model = None
+    # car_brand = None
+    # if car_arr is None:
+    #     car_spare = conn.execute("select kuzif, mator, tuning from CAR where name = (?) and number = (?) and paditsiya = (?);",(car[0], car[1], callback_query["number"])).fetchall()
+    #     car_name = car[0]
+    #     car_model = car[1]
+    #     car_brand = callback_query["number"]
+    # elif car_arr[0] is None and car_arr[1] is not None:
+    #     car_spare = conn.execute("select kuzif, mator, tuning from CAR where name = (?) and number = (?) and paditsiya = (?);",(car[0], car[1], car_arr[1])).fetchall()
+    #     car_name = car[0]
+    #     car_model = car[1]
+    #     car_brand = car_arr[1]
+    # elif car_arr[0] is not None and car_arr[1] is not None:
+    #     car_spare = conn.execute("select kuzif, mator, tuning from CAR where name = (?) and number = (?) and paditsiya = (?);",(car[0], car_arr[0], car_arr[1])).fetchall()
+    #     car_name = car[0]
+    #     car_model = car_arr[0]
+    #     car_brand = car_arr[1]
+    # elif car_arr[0] is not None and car_arr[1] is None:
+    #     car_spare = conn.execute("select kuzif, mator, tuning from CAR where name = (?) and number = (?) and paditsiya = (?);",(car[0], car_arr[0], callback_query["number"])).fetchall()
+    #     car_name = car[0]
+    #     car_model = car_arr[0]
+    #     car_brand = callback_query["number"]
+    # markup = InlineKeyboardMarkup(resize_keyboard=True)
+    # if callback_query["language"] == "uzb":
+    #     markup.row(InlineKeyboardButton(text="⚒ Kuzov", callback_data=vote_cb.new(stage="kuzif", id="start",name="",number="",language=callback_query["language"], action="client")),
+    #                InlineKeyboardButton(text="⚙️ Mator", callback_data=vote_cb.new(stage="mator", id="start",name="",number=car_brand,language=callback_query["language"],action="client")),
+    #                InlineKeyboardButton(text="💈 Tuning",callback_data=vote_cb.new(stage="tuning", id="start", name="", number=car_brand,language=callback_query["language"],action="client")))
+    # elif callback_query["language"] == "rus":
+    #     markup.row(InlineKeyboardButton(text="⚒ Кузов", callback_data=vote_cb.new(stage="kuzif", id="start",name="",number=car_brand,language=callback_query["language"], action="client")),
+    #                InlineKeyboardButton(text="⚙️ Матор", callback_data=vote_cb.new(stage="mator", id="start",name="",number=car_brand,language=callback_query["language"],action="client")),
+    #                InlineKeyboardButton(text="💈 Тюнинг",callback_data=vote_cb.new(stage="tuning", id="start", name="", number=car_brand,language=callback_query["language"],action="client")))
+    # elif callback_query["language"] == "eng":
+    #     markup.row(InlineKeyboardButton(text="⚒ Kuzov", callback_data=vote_cb.new(stage="kuzif", id="start",name="",number=car_brand,language=callback_query["language"], action="client")),
+    #                InlineKeyboardButton(text="⚙️ Mator", callback_data=vote_cb.new(stage="mator", id="start",name="",number=car_brand,language=callback_query["language"],action="client")),
+    #                InlineKeyboardButton(text="💈 Tuning",callback_data=vote_cb.new(stage="tuning", id="start", name="", number=car_brand,language=callback_query["language"],action="client")))
+
+    # if callback_query["language"] == "uzb":
+    #     if car_arr is None:
+    #         await bot.send_message(message.from_user.id,f"{car[0]} {car[1]} ning {callback_query['number']}-paditsiyasini qaysi turdagi extiyot qisimlari kerak?",reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[1] is None:
+    #         if car_arr[0] == 1: car_arr[0] = ""
+    #         await bot.send_message(message.from_user.id,f"{car[0]} {car_arr[0]} ning {car_arr[1]}-paditsiyasini qaysi turdagi extiyot qisimlari kerak?",reply_markup=markup)
+    #     elif car_arr[0] is None and car_arr[1] is not None:
+    #         if car_spare[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id,f"{car[0]} {car_arr[0]} ning {car_arr[1]}-paditsiyasini qaysi turdagi extiyot qisimlari kerak?",reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[0] is not None:
+    #         if car_spare[0] == 1: car_arr[0] = ""
+    #         if car_arr[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id, f"{car[0]} {car_arr[0]} ning {car_arr[1]}-paditsiyasini qaysi turdagi extiyot qisimlari kerak?", reply_markup=markup)
+    # elif callback_query["language"] == "eng":
+    #     if car_arr is None:
+    #         await bot.send_message(message.from_user.id, f"What parts do you need for the {callback_query['number']}rd model of the {car[0]} {car[1]}?", reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[1] is None:
+    #         if car_arr[0] == 1: car_arr[0] = ""
+    #         await bot.send_message(message.from_user.id, f"What parts do you need for the {car_arr[1]}rd model of the {car[0]} {car_arr[0]}?", reply_markup=markup)
+    #     elif car_arr[0] is None and car_arr[1] is not None:
+    #         if car_spare[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id, f"What parts do you need for the {car_arr[1]}rd model of the {car[0]} {car_arr[0]}?", reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[0] is not None:
+    #         if car_spare[0] == 1: car_arr[0] = ""
+    #         if car_arr[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id,f"What parts do you need for the {car_arr[1]}rd model of the {car[0]} {car_arr[0]}?",reply_markup=markup)
+    #
+    # elif callback_query["language"] == "rus":
+    #     if car_arr is None:
+    #         await bot.send_message(message.from_user.id,f"Какие запчасти нужны на {callback_query['number']}-ю модель {car[0]} {car[1]}?",reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[1] is None:
+    #         if car_arr[0] == 1: car_arr[0] = ""
+    #         await bot.send_message(message.from_user.id,f"Какие запчасти нужны на {car_arr[1]}-ю модель {car[0]} {car_arr[0]}?",reply_markup=markup)
+    #     elif car_arr[0] is None and car_arr[1] is not None:
+    #         if car_spare[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id,f"Какие запчасти нужны на {car_arr[1]}-ю модель {car[0]} {car_arr[0]}?",reply_markup=markup)
+    #     elif car_arr[0] is not None and car_arr[0] is not None:
+    #         if car_spare[0] == 1: car_arr[0] = ""
+    #         if car_arr[1] == 1: car_arr[1] = ""
+    #         await bot.send_message(message.from_user.id,f"Какие запчасти нужны на {car_arr[1]}-ю модель {car[0]} {car_arr[0]}?",reply_markup=markup)
+
+
+###########################################################
+    # client = conn.execute("select basket, longitude, latitude, spare_branch from CLIENT where id = (?);",(message.from_user.id,)).fetchall()[0]
+    # if callback_query["language"] == "uzb":
+    #     if client[1] is None and client[2] is None:
+    #         conn.execute("update CLIENT set settings = 'my_number' where id = (?);", (message.from_user.id,))
+    #         markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    #         markup.add(KeyboardButton(text="📱 Telefon raqamim", request_contact=True))
+    #         await bot.send_message(message.from_user.id,"\"📱 Telefon raqamim\" tugmasini bosing\n\nYoki o'z raqamingizni shu ko'rinishida kiriting:+998*********",reply_markup=markup)
+    #     else:
+    #         if client[3] is not None:
+    #             basket = client[3].split(".")
+    #             markup = InlineKeyboardMarkup()
+    #             markup.add(InlineKeyboardButton(text="✅Harid qilish",callback_data=vote_cb.new(stage="send", id="spare_menu", name="None",number="10", language=callback_query["language"],action="client")))
+    #             awa = ""
+    #             summa = 0
+    #             for i in basket:
+    #                 i = i.split("]")
+    #                 branch = conn.execute("select name from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0][0]
+    #                 awa += '"' + branch[0] + '" dan \n'
+    #                 spares = i[0].split("[")
+    #                 for spare in spares:
+    #                     spare_ = spare.split(",")
+    #
+    #                     spare_many = conn.execute(f"select {spare_[1]} from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0]
+    #                     car_spare = conn.execute(f"select name, number, paditsiya, {spare_[1]} from CAR where id = (?);",
+    #                                              (int(spare_[0]),)).fetchall()[0]
+    #                     mony = None
+    #                     for s in spare_many.split("."):
+    #                         s = s.split(",")
+    #                         if s[1] == spare_[0]:
+    #                             mony = s[0]
+    #                     x = int(spare_[2]) * int(mony)
+    #                     summa += x
+    #                     awa += " " + car_spare[0].split("[")[0] + " " + mony + " so'mdan\n   To'liq narxi:" + spare_[2] + "x" + str(x) + "so'm\n"
+    #                     markup.row(
+    #                         InlineKeyboardButton(text=car_spare[0].split("[")[0],callback_data=vote_cb.new(stage="None", id="spare_menu", name="None",number=spare_[0], language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="+", callback_data=vote_cb.new(stage="+", id="spare_menu", name=spare_[0],number=spare_[0],language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="-", callback_data=vote_cb.new(stage="-", id="spare_menu", name="None",number=spare_[0],language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="🗑",callback_data=vote_cb.new(stage="del", id="spare_menu", name="None", number=spare_[0],language=callback_query["language"], action="client"))
+    #                     )
+    #             markup.add(InlineKeyboardButton(text="❌Hech biri keremas",callback_data=vote_cb.new(stage="remove_all", id="spare_menu", name="None",number="10",language=callback_query["language"],action="client")))
+    #             await bot.send_message(message.from_user.id,awa,reply_markup=markup)
+    #         else:
+    #             await bot.send_message(message.from_user.id,"Hali hech nima yo'q")
+    # #  ----RUS MESSAGE----
+    # elif callback_query["language"] == "rus":
+    #     if client[1] is None and client[2] is None:
+    #         conn.execute("update CLIENT set settings = 'my_number' where id = (?);", (message.from_user.id,))
+    #         markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    #         markup.add(KeyboardButton(text="📱 Мой номер телефона", request_contact=True))
+    #         await bot.send_message(message.from_user.id,
+    #                                "\"📱 Мой номер телефона\" нажми на кнопку\n\nИли введите свой номер в эту форму:+************",
+    #                                reply_markup=markup)
+    #     else:
+    #         if client[3] is not None:
+    #             basket = client[3].split(".")
+    #             markup = InlineKeyboardMarkup()
+    #             markup.add(InlineKeyboardButton(text="✅Покупка",callback_data=vote_cb.new(stage="send", id="spare_menu", name="None",  number="10", language=callback_query["language"],  action="client")))
+    #             awa = ""
+    #             summa = 0
+    #             for i in basket:
+    #                 i = i.split("]")
+    #                 branch = conn.execute("select name from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0][0]
+    #                 awa += 'Из "' + branch[0] + '"\n'
+    #                 spares = i[0].split("[")
+    #                 for spare in spares:
+    #                     spare_ = spare.split(",")
+    #
+    #                     spare_many = conn.execute(f"select {spare_[1]} from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0]
+    #                     car_spare = conn.execute(f"select name, number, paditsiya, {spare_[1]} from CAR where id = (?);", (int(spare_[0]),)).fetchall()[0]
+    #                     mony = None
+    #                     for s in spare_many.split("."):
+    #                         s = s.split(",")
+    #                         if s[1] == spare_[0]:
+    #                             mony = s[0]
+    #                     x = int(spare_[2]) * int(mony)
+    #                     summa += x
+    #                     awa += " " + car_spare[0].split("[")[0] + " " + mony + " от sum\n   Полная стоимость:" + spare_[2] + "x" + str(x) + "so'm\n"
+    #                     markup.row(
+    #                         InlineKeyboardButton(text=car_spare[0].split("[")[0],
+    #                                              callback_data=vote_cb.new(stage="None", id="spare_menu", name="None",number=spare_[0], language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="+", callback_data=vote_cb.new(stage="+", id="spare_menu", name=spare_[0],number=spare_[0],language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="-", callback_data=vote_cb.new(stage="-", id="spare_menu", name="None",number=spare_[0],language=callback_query["language"],action="client")),
+    #                         InlineKeyboardButton(text="🗑", callback_data=vote_cb.new(stage="del", id="spare_menu", name="None", number=spare_[0],language=callback_query["language"], action="client"))
+    #                     )
+    #             markup.add(InlineKeyboardButton(text="❌Ни один не нужен",callback_data=vote_cb.new(stage="remove_all", id="spare_menu", name="None",number="10",language=callback_query["language"],action="client")))
+    #             await bot.send_message(message.from_user.id,awa,reply_markup=markup)
+    #         else:
+    #             await bot.send_message(message.from_user.id,"Пока ничего 🗑")
+    #
+    # #  ----ENG MESSAGE-----
+    # elif callback_query["language"] == "eng":
+    #     if client[1] is None and client[2] is None:
+    #         conn.execute("update CLIENT set settings = 'my_number' where id = (?);", (message.from_user.id,))
+    #         markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    #         markup.add(KeyboardButton(text="📱 My phone number", request_contact=True))
+    #         number = 1
+    #         await bot.send_message(message.from_user.id,"\"📱 My phone number\" press the button\n\nOr enter your number in this form:+************",reply_markup=markup)
+    #     else:
+    #         if client[3] is not None:
+    #             basket = client[3].split(".")
+    #             markup = InlineKeyboardMarkup()
+    #             markup.add(InlineKeyboardButton(text="✅Shopping",
+    #                                             callback_data=vote_cb.new(stage="send", id="spare_menu", name="None",
+    #                                                                       number="10", language=callback_query["language"],
+    #                                                                       action="client")))
+    #             awa = ""
+    #             summa = 0
+    #             for i in basket:
+    #                 i = i.split("]")
+    #                 branch = conn.execute("select name from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0][0]
+    #                 awa += 'From "' + branch[0] + '"\n'
+    #                 spares = i[0].split("[")
+    #                 for spare in spares:
+    #                     spare_ = spare.split(",")
+    #
+    #                     spare_many = conn.execute(f"select {spare_[1]} from BRANCH where id = (?);", (int(i[1]),)).fetchall()[0]
+    #                     car_spare = conn.execute(f"select name, number, paditsiya, {spare_[1]} from CAR where id = (?);",
+    #                                              (int(spare_[0]),)).fetchall()[0]
+    #                     mony = None
+    #                     for s in spare_many.split("."):
+    #                         s = s.split(",")
+    #                         if s[1] == spare_[0]:
+    #                             mony = s[0]
+    #                     x = int(spare_[2]) * int(mony)
+    #                     summa += x
+    #                     awa += " " + car_spare[0].split("[")[0] + " " + mony + " from the sum\n   Full price:" + spare_[
+    #                         2] + "x" + str(x) + "sum"
+    #                     markup.row(
+    #                         InlineKeyboardButton(text=car_spare[0].split("[")[0],
+    #                                              callback_data=vote_cb.new(stage="None", id="spare_menu", name="None",
+    #                                                                        number=spare_[0], language=callback_query["language"],
+    #                                                                        action="client")),
+    #                         InlineKeyboardButton(text="+", callback_data=vote_cb.new(stage="+", id="spare_menu", name=spare_[0],
+    #                                                                                  number=spare_[0],
+    #                                                                                  language=callback_query["language"],
+    #                                                                                  action="client")),
+    #                         InlineKeyboardButton(text="-", callback_data=vote_cb.new(stage="-", id="spare_menu", name="None",
+    #                                                                                  number=spare_[0],
+    #                                                                                  language=callback_query["language"],
+    #                                                                                  action="client")),
+    #                         InlineKeyboardButton(text="🗑",
+    #                                              callback_data=vote_cb.new(stage="del", id="spare_menu", name="None", number=spare_[0],
+    #                                                                        language=callback_query["language"], action="client"))
+    #                     )
+    #             markup.add(InlineKeyboardButton(text="❌None are needed",
+    #                                             callback_data=vote_cb.new(stage="remove_all", id="spare_menu", name="None",
+    #                                                                       number="10",
+    #                                                                       language=callback_query["language"],
+    #                                                                       action="client")))
+    #             await bot.send_message(message.from_user.id,awa,reply_markup=markup)
+    #         else:
+    #             await bot.send_message(message.from_user.id,"Nothing yet 🗑")
+    # client = client.split(".")
+    # awa = None
+    # for i in client:
+    #     i = i.split("]")
+    #     branch = i[0].split("[")
+    #     for branch_ in branch:
+    #         # spare da qism,type,soni[qism,type,soni]filial
+    #         branch__ = branch_.split(",")
+    #         if branch__[0] == callback_query["number"]:
+    #             awa = branch__[0] + "," + branch__[1] + "," + str(int(branch__[2]) + 1)
+    #             branch.remove(branch__[0] + "," + branch__[1] + "," + branch__[2])
+    #             branch.append(awa)
+    #             break
+    #     son = 0
+    #     awa = None
+    #     for i in i:
+    #         if son == 0:
+    #             awa += i
+    #             son = 1
+    #         else:
+    #             awa += "]" + i
+    #             break
+    #     break
+    # conn.execute(f"update CLIENT set spare_number = '{awa}' where id = (?);", (message.from_user.id,))
+
+
+     # client = conn.execute("select spare_branch, phone_number, latitude, longitude from CLIENT where id = (?);",(message.from_user.id,)).fetchall()[0]
+    # client_ = client[0].split(".")
+    # awa = None
+    # for i in client_:
+    #     # spare da spare,type,number[spare,type,number]branch.spare,type,number[spare,type,number]branch
+    #     i = i.split("]")
+    #     admin = conn.execute("select id from ADMIN where branch = (?);", (int(i[1]),)).fetchall()
+    #     awa = ""
+    #     summa = 0
+    #     for spare in i[0].split("["):
+    #         spare = spare.split(",")
+    #         spare_conn = conn.execute(F"select name, number, paditsiya {spare[1]} from CAR where id = (?);",(spare[0],)).fetchall()[0]
+    #         for spare_conn_ in spare_conn[3].split("[")[1].split("."):
+    #             spare_conn_ = spare_conn_.split(",")
+    #             if spare_conn_[0] == i[1]:
+    #                 # spare[branch,many.branch,many
+    #                 many = int(spare[2]) * int(spare_conn_[1])
+    #                 summa += many
+    #                 awa += spare_conn[3].split("[")[0] + " dan " + spare[2] + "x" + str(many) + " so'mlik\n"
+    #         awa += "Jami narxi:" + str(summa) + "so'm\n\nTelefon raqami: +" + client[1] + "\nTurgan joyi👇🏻👇🏻"
+    #         for i in admin:
+    #             await bot.send_message(admin[0], awa)
+    #             await bot.send_location(admin[0], client[2], client[3])
+    # markup = InlineKeyboardMarkup(resize_keboard=True)
+    # if callback_query["language"] == "uzb":
+    #     markup.add(InlineKeyboardButton(text="✅Barcha maxsulotlar keldi", callback_data=vote_cb.new(stage="arrived", id="spare", name="None", number="None", language=callback_query["language"], action="branch")))
+    #     await bot.send_message(message.from_user.id,"Yuborildi tez orada yetib keladi.\n\nBarcha maxsulotlar kelganda pastdagi tugmani bosib qo'ying iltimos!",reply_markup=markup)
+    # elif callback_query["language"] == "eng":
+    #     markup.add(InlineKeyboardButton(text="✅All products arrived",callback_data=vote_cb.new(stage="arrived", id="spare", name="None", number="None", language=callback_query["language"], action="branch")))
+    #     await bot.send_message(message.from_user.id,"Shipped will arrive soon.\n\nPlease click the button below when all products arrive!",reply_markup=markup)
+    # elif callback_query["language"] == "rus":
+    #     markup.add(InlineKeyboardButton(text="✅Все продукты прибыли",callback_data=vote_cb.new(stage="arrived", id="spare",name="None",number="None",language=callback_query["language"],action="branch")))
+    #     await bot.send_message(message.from_user.id,"Отправленный скоро прибудет.\n\nПожалуйста, нажмите кнопку ниже, когда все товары будут доставлены!",reply_markup=markup)
+
+
+    # await bot.send_message(message.from_user.id,"Iltimos bir oz kuting!")
+    # branches = []
+    # if callback_query["language"] == "uzb":
+    #     for spare_arr in basket[0].split("."):
+    #         spare = conn.execute("select branches, spare_name, tur, id from SPARE where number = (?);",(int(spare_arr.split(",")[0]),)).fetcchall()[0]
+    #         for i in spare[0].split("."):
+    #             pass
+
+
+
+    #############################################################
+    client = client[0]
+        conn.execute("update CLIENT set latitude = (?), longitude = (?) where id = (?);",(message.location.latitude, message.location.longitude, message.from_user.id))
+        spares = client[1].split(".")
+        for spare in spares:
+            son = 0
+            awa = None
+            spare_ = spare.split(",")
+            if client[2] is not None:
+                branches = client[2].split(".")
+                for branch in branches:
+                    branch_ = branch.split(",")
+                    spare = conn.execute(f"select * from BRANCH where  id = (?) and {branch_[1]} like '%{branch_[0]}%';",(branch_[2],)).fetchall()
+                    if spare:
+                        son = 1
+                        awa = spare_[0]+","+spare_[1]+","+spare_[2]+"["+branch
+                        branches.remove(branch)
+                        branches.append(awa)
+                        break
+                add = ""
+                son_ = 0
+                for i in branches:
+                    if son_ == 0:
+                        add += i
+                        son_ = 1
+                    else:
+                        add += "."+i
+                conn.execute(f"update CLIENT set spare_branch = '{add}' where id = (?);",(message.from_user.id,))
+
+            if son == 0:
+                branches = conn.execute(f"select latitude, longitude, id from BRANCH where {spare_[1]} like '%{spare_[2].strip()}%';").fetchall()
+                branches_location = []
+                for branch in branches:
+                    admin = conn.execute("select * from ADMIN where branch = (?);",(branch[2],)).fetchall()
+                    if admin:
+                        if message.location.latitude - branch[0] >= 0:
+                            latitude = (message.location.latitude - branch[0]) * -1
+                        else:
+                            latitude = (message.location.latitude - branch[0])
+                        if message.location.longitude - branch[1] >= 0:
+                            longitude = (message.location.longitude - branch[1]) * -1
+                        else:
+                            longitude = (message.location.longitude - branch[1])
+                        if longitude + latitude >= 0:
+                            location = longitude - latitude
+                        else:
+                            location = longitude + latitude
+                        branches_location.append([location,branch[3]])
+                    else:
+                        continue
+                for branch_location in branches_location:
+                    son = 0
+                    for i in branches_location:
+                        if branch_location[0] <= i[0]:
+                            son = 1
+                            continue
+                        else:
+                            son = 0
+                            break
+                    if son == 1:
+                        if client[2] is not None and client[2] != "":
+                            conn.execute(f"update CLIENT set spare_branch = '{client[2]+'.'+spare_[0]+','+spare_[1]+','+spare_[2]+']'+branch_location[1]}' where id = {message.from_user.id};")
+                        else:
+                            conn.execute(f"update CLIENT set spare_branch = '{spare_[0]+','+spare_[1]+','+spare_[2]+']'+branch_location[1]}' where id = {message.from_user.id};")
+                        break
+                    else:
+                        continue
+        if client[3] == "uzb":
+            await bot.send_message(message.from_user.id,"Rahmat!😊",reply_markup=ReplyKeyboardRemove())
+        await client_basket(message,conn,vote_cb,client[3])
